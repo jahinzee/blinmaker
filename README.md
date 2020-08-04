@@ -11,11 +11,5 @@ Features
 **Oh, and the code is open source; make it yours!**
 
 Contributors:
-- Life of Boris
-
--- [YouTube](https://www.youtube.com/user/NocturnoPlays)
--- [Twitter](https://twitter.com/life_of_boris)
-
-- Jahin Z. (jahinzee)
-
--- [Twitter](http://twitter.com/jahinzee)
+- Life of Boris ; [Twitter](https://twitter.com/life_of_boris)
+- Jahin Z. (jahinzee) ; [Twitter](http://twitter.com/jahinzee)
