@@ -1,9 +1,9 @@
 # <configuration>
 
 # Set custom minimum amounts
-# Order:            = [ Eggs,   Milk (mL),  Flour (g) ]
-# Default Values:   = [ 1,      200,        100       ]
-minimumValues       = [ 1,      200,        100       ]
+# Order:            = [ Eggs,   Milk (Cups),  Flour (Cups) ]
+# Default Values:   = [ 1,      2,        2       ]
+minimumValues       = [ 1,      2,        2       ]
 
 # Set custom portion size
 portionSize = 4
@@ -28,16 +28,16 @@ def Exit():
     exit()
 def Main():
     eggsAmount = Ask("How many eggs you have?")
-    milkAmount = Ask("How much milk you have? (in milliliters)")
-    flourAmount = Ask("How much flour you have? (in grams)")
+    milkAmount = Ask("How much milk you have? (in Cups)")
+    flourAmount = Ask("How much flour you have? (in Cups)")
     if eggsAmount < eggsMin or milkAmount < milkMin or flourAmount < flourMin: print("Sorry, no blin today. :("); Exit()
     flourAmount = flourAmount / flourMin
     milkAmount = milkAmount / milkMin
     smallest = SmolVar(flourAmount, eggsAmount, milkAmount)
-    print("\nYou can make " + str(smallest * portionSize) + " portions of blins\n\nYou will need:")
+    print("\nYou can make " + str(smallest * portionSize) + " portions of blins, which is 4 blins per portion.\n\nYou will need:")
     print(" - " + str(smallest * eggsMin) + " eggs")
-    print(" - " + str(smallest * flourMin) + "g of flour")
-    print(" - " + str(smallest * flourMin) + "mL of milk")
+    print(" - " + str(smallest * flourMin) + "Cups of flour")
+    print(" - " + str(smallest * flourMin) + "Cups of milk")
     Exit()
 def Init():
     import getpass
@@ -62,5 +62,9 @@ def Init():
     except ValueError:
         print("Invalid portion amount; using default values"); portionSizeReal = int(4)
     print("Hello, " + getpass.getuser() + "!\nBlinmaker is starting up...\n")
+    print("Ready in 3...")
+    print("2...")
+    print("1...")
+    print("Blinmaker ready. Awaiting input...")
     Main()
 Init()
