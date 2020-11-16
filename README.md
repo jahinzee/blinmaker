@@ -6,7 +6,7 @@ Features
 --------
 * Set custom minimum ingredient and portion values
 * Same smallest variable function as in Boris' code
-* That's about it ¯\_(ツ)_/¯
+* That's about it ¯\\_(ツ)_/¯
 
 **Oh, and the code is open source; make it yours!**
 
@@ -14,4 +14,5 @@ Contributors
 ------------
 - Life of Boris ; [Twitter](https://twitter.com/life_of_boris)
 - Jahin Z. (jahinzee) ; [Twitter](http://twitter.com/jahinzee)
+- LarsTheHacker ; [GitHub](https://github.com/LarsTheHacker)
 [![Run on Repl.it](https://repl.it/badge/github/LarsTheHacker/blinmaker)]
